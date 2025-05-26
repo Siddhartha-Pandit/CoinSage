@@ -1,0 +1,1261 @@
+{
+	"info": {
+		"_postman_id": "529cf4aa-4d2e-4620-b62f-8d1de11fa92a",
+		"name": "CoinSage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40224794"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"siddhartha\",\r\n    \"email\":\"siddhartha@gmail.com\",\r\n    \"password\":\"siddhartha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sidd@gmail.com\",\r\n    \"password\":\"sidd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oldPassword\": \"sidd1\",\r\n  \"newPassword\": \"sidd\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add the people",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Alice Example\",\r\n  \"email\": \"alice@example.com\",\r\n  \"phone\": \"1234567890\",\r\n  \"image\": \"https://example.com/alice.png\",\r\n  \"isUser\":true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the all the people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get people by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/people/6829863b604e41bd3372e7a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"people",
+						"6829863b604e41bd3372e7a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update the people",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Alice\",\r\n  \"email\": \"alice@example.com\",\r\n  \"phone\": \"1234567890\",\r\n  \"image\": \"https://example.com/alice.png\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/people/6829863b604e41bd3372e7a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"people",
+						"6829863b604e41bd3372e7a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete People",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/people/682984a4604e41bd3372e79c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"people",
+						"682984a4604e41bd3372e79c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currencyies Store in database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Currency By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/currency/68298aa8f418a879e7891706",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"currency",
+						"68298aa8f418a879e7891706"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"expense\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all category by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category by category id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/category/6829a6dec732b97aac7a1045",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"category",
+						"6829a6dec732b97aac7a1045"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"kharcha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/category/6829a6dec732b97aac7a1045",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"category",
+						"6829a6dec732b97aac7a1045"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/category/68299360604e41bd3372e868",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"category",
+						"68299360604e41bd3372e868"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add the Expenditure type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"food\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expenditureTypes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenditureTypes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all expenditure typs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expenditureTypes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenditureTypes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Expenditure type by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expenditureTypes/6829a6fec732b97aac7a1047",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenditureTypes",
+						"6829a6fec732b97aac7a1047"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update the expenditure type",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"health\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expenditureTypes/6829a6fec732b97aac7a1047",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenditureTypes",
+						"6829a6fec732b97aac7a1047"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Expenditure type",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expenditureTypes/6829994ac732b97aac7a1034",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenditureTypes",
+						"6829994ac732b97aac7a1034"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sbi\",\r\n    \"type\":\"debit\",\r\n    \"balance\":50000,\r\n    \"currency\":\"68298aa8f418a879e78916fe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all user accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user account by userid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/6829a685c732b97aac7a1043",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"6829a685c732b97aac7a1043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update accounts",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sbi\",\r\n    \"type\":\"debit\",\r\n    \"balance\":100,\r\n    \"currency\":\"68298aa8f418a879e78916fe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/6829a685c732b97aac7a1043",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"6829a685c732b97aac7a1043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete accounts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/68299f1bc732b97aac7a103d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"68299f1bc732b97aac7a103d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Expense",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dinner at The Curry Place\",\r\n  \"totalBillAmount\": 1200,\r\n  \"paidBy\": [\r\n    { \"personId\": \"6832ead5ad15654eed6cef7c\", \"amountPaid\": 500 },\r\n  { \"personId\": \"683033606977d3646d1c31d7\", \"amountPaid\": 500 },\r\n  { \"personId\": \"6832f0ddad15654eed6cefd6\", \"amountPaid\": 200 }\r\n  ],\r\n  \"splitType\": \"PERCENTAGE\",\r\n  \"splits\": [\r\n    { \"personId\": \"683033606977d3646d1c31d7\", \"value\": 25 },\r\n    { \"personId\": \"6832ead5ad15654eed6cef7c\", \"value\": 25 },\r\n    { \"personId\": \"6832f0ddad15654eed6cefd6\", \"value\": 50 }\r\n\r\n  ],\r\n  \"date\": \"2025-05-24T20:30:00.000Z\",\r\n  \"accountId\": \"6830559e6e3e098b090f08a5\",\r\n  \"categoryId\": \"683033eb6977d3646d1c31e0\",\r\n  \"typeId\": \"683034626977d3646d1c31ea\",\r\n  \"goalId\": \"68304c9e6977d3646d1c31f8\",\r\n  \"notes\": \"Friday night dinner split among friends\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all expense",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expense/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get expense by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expense/6832fa41ad15654eed6cf08a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"6832fa41ad15654eed6cf08a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update the expense",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dinner at The momo house\",\r\n  \"totalBillAmount\": 1500,\r\n  \"paidBy\": [\r\n    { \"personId\": \"6832ead5ad15654eed6cef7c\", \"amountPaid\": 200 },\r\n  { \"personId\": \"683033606977d3646d1c31d7\", \"amountPaid\": 800 },\r\n  { \"personId\": \"6832f0ddad15654eed6cefd6\", \"amountPaid\": 500 }\r\n  ],\r\n  \"splitType\": \"PERCENTAGE\",\r\n  \"splits\": [\r\n    { \"personId\": \"683033606977d3646d1c31d7\", \"value\": 25 },\r\n    { \"personId\": \"6832ead5ad15654eed6cef7c\", \"value\": 25 },\r\n    { \"personId\": \"6832f0ddad15654eed6cefd6\", \"value\": 50 }\r\n\r\n  ],\r\n  \"date\": \"2025-05-24T20:30:00.000Z\",\r\n  \"accountId\": \"6830559e6e3e098b090f08a5\",\r\n  \"categoryId\": \"683033eb6977d3646d1c31e0\",\r\n  \"typeId\": \"683034626977d3646d1c31ea\",\r\n  \"goalId\": \"68304c9e6977d3646d1c31f8\",\r\n  \"notes\": \"Friday night dinner split among friends\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense/6833395145b5dee3d8b013f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"6833395145b5dee3d8b013f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete the expense",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/expense/6833395145b5dee3d8b013f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"6833395145b5dee3d8b013f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add income source",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pocket money\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomeSources/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeSources",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all income sources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeSources/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeSources",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get income sources by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeSources/6829b899a349acfc92bcb736",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeSources",
+						"6829b899a349acfc92bcb736"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update the income sources",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"stock selling\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomeSources/6829b899a349acfc92bcb736",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeSources",
+						"6829b899a349acfc92bcb736"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dlelete incom sources",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeSources/6829b0c4a349acfc92bcb72a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeSources",
+						"6829b0c4a349acfc92bcb72a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Income Goals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Invest\",\r\n  \"targetAmount\": 50000,\r\n  \"targetDate\": \"2025-12-31T00:00:00.000Z\",\r\n  \"balance\": 0,\r\n  \"allocationRate\": 30,\r\n  \"account\": \"6829a685c732b97aac7a1043\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomeGoals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeGoals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Income goals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeGoals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeGoals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get income goals by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeGoals/682a0d1049347a0677a58cfe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeGoals",
+						"682a0d1049347a0677a58cfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update the income goals",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Emergency Fund\",\r\n  \"targetAmount\": 50000,\r\n  \"targetDate\": \"2025-12-31T00:00:00.000Z\",\r\n  \"balance\": 3000,\r\n  \"allocationRate\": 10,\r\n  \"account\": \"6829a685c732b97aac7a1043\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomeGoals/682a0d1049347a0677a58cfe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeGoals",
+						"682a0d1049347a0677a58cfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete income goals",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomeGoals/6829b3b0a349acfc92bcb730",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomeGoals",
+						"6829b3b0a349acfc92bcb730"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add the income",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"March Freelance\",\r\n  \"amount\": 15000,\r\n  \"source\": \"683034bf6977d3646d1c31f1\",\r\n  \"date\": \"2025-03-01T00:00:00.000Z\",\r\n  \"notes\": \"Freelance payment for March\",\r\n  \"destAccount\": \"6830559e6e3e098b090f08a5\",\r\n  \"allocations\": [\r\n   \r\n    \"68304c9e6977d3646d1c31f8\",\r\n   \r\n \"68304cab6977d3646d1c31fb\",\r\n\r\n    \"68304cb06977d3646d1c31fe\"\r\n\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All incomes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get income by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomes/683053fc6e3e098b090f0882",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomes",
+						"683053fc6e3e098b090f0882"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update incomes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"March Freelance\",\r\n  \"amount\": 20000,\r\n  \"source\": \"683034bf6977d3646d1c31f1\",\r\n  \"date\": \"2025-03-01T00:00:00.000Z\",\r\n  \"notes\": \"Freelance payment for March\",\r\n  \"destAccount\": \"6830559e6e3e098b090f08a5\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incomes/683063ac6e3e098b090f0994",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomes",
+						"683063ac6e3e098b090f0994"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete income",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incomes/6833314545b5dee3d8b01296",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incomes",
+						"6833314545b5dee3d8b01296"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lender\": \"6832f0ddad15654eed6cefd6\",\r\n  \"borrower\": \"6832ead5ad15654eed6cef7c\",\r\n  \r\n  \"amount\": 2500,\r\n  \"date\": \"2025-05-20T00:00:00.000Z\",\r\n  \"notes\": \"Updated loan for May\",\r\n  \"settled\": false,\r\n  \"account\": \"6830559e6e3e098b090f08a5\",\r\n  \"expense\": \"664ead7949cfb96e239058c3\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all loan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get load by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/loan/68340127adb5a6736a686fa8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan",
+						"68340127adb5a6736a686fa8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update loan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lender\": \"6832ead5ad15654eed6cef7c\",\r\n  \"borrower\": \"6832f0ddad15654eed6cefd6\",\r\n  \r\n  \"amount\": 1500,\r\n  \"date\": \"2025-05-20T00:00:00.000Z\",\r\n  \"notes\": \"Updated loan for May\",\r\n  \"settled\": false,\r\n  \"account\": \"6830559e6e3e098b090f08a5\",\r\n  \"expense\": \"664ead7949cfb96e239058c3\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/loan/68340529adb5a6736a686fd4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan",
+						"68340529adb5a6736a686fd4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete loan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/loan/68340529adb5a6736a686fd4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan",
+						"68340529adb5a6736a686fd4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hue Contrast Plotter</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #controls { margin-bottom: 12px; }
+    canvas { border: 1px solid #666; display: block; margin-top: 12px; }
+    label { display: block; margin: 6px 0; }
+    button { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label>
+      Hue: 
+      <input type="range" id="hueSlider" min="0" max="360" value="0" />
+      <span id="hueValue">0°</span>
+    </label>
+
+    <label>
+      Pick a color: 
+      <input type="color" id="colorPicker" value="#ff0000" />
+      <input type="text" id="colorHex" value="#ff0000" size="8" />
+    </label>
+
+    <button id="btnPlot">Plot & Show Contrast</button>
+  </div>
+
+  <canvas id="svPicker" width="700" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById('svPicker');
+    const ctx = canvas.getContext('2d');
+    const hueSlider = document.getElementById('hueSlider');
+    const hueValue = document.getElementById('hueValue');
+    const colorPicker = document.getElementById('colorPicker');
+    const colorHex = document.getElementById('colorHex');
+
+    // Color synchronization
+    colorPicker.addEventListener('input', () => colorHex.value = colorPicker.value);
+    colorHex.addEventListener('input', () => {
+      if (/^#[\da-f]{3,6}$/i.test(colorHex.value)) {
+        colorPicker.value = colorHex.value;
+      }
+    });
+
+    // Color conversion utilities
+    function hexToRgb(hex) {
+      hex = hex.replace(/^#/, '');
+      if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+      const n = parseInt(hex, 16);
+      return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+    }
+
+    function rgbToHsl(r, g, b) {
+      r /= 255, g /= 255, b /= 255;
+      const max = Math.max(r, g, b), min = Math.min(r, g, b);
+      let h, s, l = (max + min) / 2;
+      
+      if (max !== min) {
+        const d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch (max) {
+          case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+          case g: h = (b - r) / d + 2; break;
+          case b: h = (r - g) / d + 4; break;
+        }
+        h /= 6;
+      }
+      return { h: (h || 0) * 360, s: s || 0, l };
+    }
+
+    function hslToRgb(h, s, l) {
+      h /= 360;
+      let r, g, b;
+      
+      if (s === 0) {
+        r = g = b = l;
+      } else {
+        const hue2rgb = (p, q, t) => {
+          if (t < 0) t += 1;
+          if (t > 1) t -= 1;
+          if (t < 1/6) return p + (q - p) * 6 * t;
+          if (t < 1/2) return q;
+          if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+          return p;
+        };
+        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        const p = 2 * l - q;
+        r = hue2rgb(p, q, h + 1/3);
+        g = hue2rgb(p, q, h);
+        b = hue2rgb(p, q, h - 1/3);
+      }
+      return {
+        r: Math.round(r * 255),
+        g: Math.round(g * 255),
+        b: Math.round(b * 255)
+      };
+    }
+
+    function relativeLuminance(r, g, b) {
+      const [rs, gs, bs] = [r, g, b].map(c => {
+        c /= 255;
+        return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+      });
+      return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+    }
+
+    function drawSVBox(hue) {
+      // Horizontal saturation gradient
+      const gradH = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      gradH.addColorStop(0, '#fff');
+      gradH.addColorStop(1, `hsl(${hue}, 100%, 50%)`);
+      ctx.fillStyle = gradH;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Vertical brightness gradient
+      const gradV = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradV.addColorStop(0, 'rgba(0,0,0,0)');
+      gradV.addColorStop(1, 'rgba(0,0,0,1)');
+      ctx.fillStyle = gradV;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function drawNonContrastyZone(selectedR, selectedG, selectedB) {
+      const L1 = relativeLuminance(selectedR, selectedG, selectedB);
+      const hue = +hueSlider.value;
+      const w = canvas.width, h = canvas.height;
+      
+      ctx.save();
+      ctx.fillStyle = 'rgba(255,255,255,0.3)';
+      
+      for (let x = 0; x < w; x++) {
+        const s = x / w;
+        let lower = 0, upper = 1;
+        
+        // Find upper boundary
+        let low = 0, high = 1;
+        for (let i = 0; i < 12; i++) {
+          const mid = (low + high) / 2;
+          const rgb = hslToRgb(hue/360, s, mid);
+          const L2 = relativeLuminance(rgb.r, rgb.g, rgb.b);
+          const contrast = (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+          contrast < 4.5 ? low = mid : high = mid;
+        }
+        upper = high;
+
+        // Find lower boundary
+        low = 0, high = 1;
+        for (let i = 0; i < 12; i++) {
+          const mid = (low + high) / 2;
+          const rgb = hslToRgb(hue/360, s, mid);
+          const L2 = relativeLuminance(rgb.r, rgb.g, rgb.b);
+          const contrast = (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+          contrast < 4.5 ? high = mid : low = mid;
+        }
+        lower = low;
+
+        if (upper < lower) continue;
+        const y1 = h * (1 - upper);
+        const y2 = h * (1 - lower);
+        ctx.fillRect(x, y1, 1, y2 - y1);
+      }
+      ctx.restore();
+    }
+
+    function plot() {
+      const hex = colorHex.value.trim();
+      if (!/^#[\da-f]{3,6}$/i.test(hex)) return;
+      
+      const { r, g, b } = hexToRgb(hex);
+      const { h, s, l } = rgbToHsl(r, g, b);
+      const hue = +hueSlider.value;
+      
+      drawSVBox(hue);
+      drawNonContrastyZone(r, g, b);
+
+      // Plot selected color if hue matches
+      if (Math.round(h) === hue) {
+        const x = s * canvas.width;
+        const y = (1 - l) * canvas.height;
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.fillStyle = hex;
+        ctx.strokeStyle = '#000';
+        ctx.lineWidth = 1.5;
+        ctx.fill();
+        ctx.stroke();
+      }
+    }
+
+    // Event listeners
+    document.getElementById('btnPlot').addEventListener('click', plot);
+    hueSlider.addEventListener('input', () => {
+      hueValue.textContent = `${hueSlider.value}°`;
+    });
+
+    // Initial render
+    hueValue.textContent = `${hueSlider.value}°`;
+    drawSVBox(hueSlider.value);
+  </script>
+</body>
+</html>

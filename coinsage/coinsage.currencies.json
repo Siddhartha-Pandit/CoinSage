@@ -1,0 +1,1512 @@
+[{
+  "_id": {
+    "$oid": "68298aa8f418a879e78916fc"
+  },
+  "symbol": "AED",
+  "__v": 0,
+  "name": "United Arab Emirates Dirham"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78916fe"
+  },
+  "symbol": "AFN",
+  "__v": 0,
+  "name": "Afghan Afghani"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891700"
+  },
+  "symbol": "ALL",
+  "__v": 0,
+  "name": "Albanian Lek"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891702"
+  },
+  "symbol": "AMD",
+  "__v": 0,
+  "name": "Armenian Dram"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891704"
+  },
+  "symbol": "ANG",
+  "__v": 0,
+  "name": "NL Antillean Guilder"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891706"
+  },
+  "symbol": "AOA",
+  "__v": 0,
+  "name": "Angolan Kwanza"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891708"
+  },
+  "symbol": "ARS",
+  "__v": 0,
+  "name": "Argentine Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789170a"
+  },
+  "symbol": "AUD",
+  "__v": 0,
+  "name": "Australian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789170c"
+  },
+  "symbol": "AWG",
+  "__v": 0,
+  "name": "Aruban Florin"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789170e"
+  },
+  "symbol": "AZN",
+  "__v": 0,
+  "name": "Azerbaijani Manat"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891710"
+  },
+  "symbol": "BAM",
+  "__v": 0,
+  "name": "Bosnia-Herzegovina Convertible Mark"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891712"
+  },
+  "symbol": "BBD",
+  "__v": 0,
+  "name": "Barbadian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891714"
+  },
+  "symbol": "BDT",
+  "__v": 0,
+  "name": "Bangladeshi Taka"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891716"
+  },
+  "symbol": "BGN",
+  "__v": 0,
+  "name": "Bulgarian Lev"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891718"
+  },
+  "symbol": "BHD",
+  "__v": 0,
+  "name": "Bahraini Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789171a"
+  },
+  "symbol": "BIF",
+  "__v": 0,
+  "name": "Burundian Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789171c"
+  },
+  "symbol": "BMD",
+  "__v": 0,
+  "name": "Bermudan Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789171e"
+  },
+  "symbol": "BND",
+  "__v": 0,
+  "name": "Brunei Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891720"
+  },
+  "symbol": "BOB",
+  "__v": 0,
+  "name": "Bolivian Boliviano"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891722"
+  },
+  "symbol": "BRL",
+  "__v": 0,
+  "name": "Brazilian Real"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891724"
+  },
+  "symbol": "BSD",
+  "__v": 0,
+  "name": "Bahamian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891726"
+  },
+  "symbol": "BTN",
+  "__v": 0,
+  "name": "Bhutanese Ngultrum"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891728"
+  },
+  "symbol": "BWP",
+  "__v": 0,
+  "name": "Botswanan Pula"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789172a"
+  },
+  "symbol": "BYN",
+  "__v": 0,
+  "name": "Belarusian ruble"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789172c"
+  },
+  "symbol": "BYR",
+  "__v": 0,
+  "name": "Belarusian Ruble"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789172e"
+  },
+  "symbol": "BZD",
+  "__v": 0,
+  "name": "Belize Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891730"
+  },
+  "symbol": "CAD",
+  "__v": 0,
+  "name": "Canadian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891732"
+  },
+  "symbol": "CDF",
+  "__v": 0,
+  "name": "Congolese Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891735"
+  },
+  "symbol": "CHF",
+  "__v": 0,
+  "name": "Swiss Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891737"
+  },
+  "symbol": "CLF",
+  "__v": 0,
+  "name": "Unidad de Fomento"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891739"
+  },
+  "symbol": "CLP",
+  "__v": 0,
+  "name": "Chilean Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789173b"
+  },
+  "symbol": "CNY",
+  "__v": 0,
+  "name": "Chinese Yuan"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789173d"
+  },
+  "symbol": "COP",
+  "__v": 0,
+  "name": "Coombian Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789173f"
+  },
+  "symbol": "CRC",
+  "__v": 0,
+  "name": "Costa Rican Colón"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891741"
+  },
+  "symbol": "CUC",
+  "__v": 0,
+  "name": "Cuban Convertible Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891743"
+  },
+  "symbol": "CUP",
+  "__v": 0,
+  "name": "Cuban Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891745"
+  },
+  "symbol": "CVE",
+  "__v": 0,
+  "name": "Cape Verdean Escudo"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891747"
+  },
+  "symbol": "CZK",
+  "__v": 0,
+  "name": "Czech Republic Koruna"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789174a"
+  },
+  "symbol": "DJF",
+  "__v": 0,
+  "name": "Djiboutian Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789174c"
+  },
+  "symbol": "DKK",
+  "__v": 0,
+  "name": "Danish Krone"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789174e"
+  },
+  "symbol": "DOP",
+  "__v": 0,
+  "name": "Dominican Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891750"
+  },
+  "symbol": "DZD",
+  "__v": 0,
+  "name": "Algerian Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891752"
+  },
+  "symbol": "EGP",
+  "__v": 0,
+  "name": "Egyptian Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891754"
+  },
+  "symbol": "ERN",
+  "__v": 0,
+  "name": "Eritrean Nakfa"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891756"
+  },
+  "symbol": "ETB",
+  "__v": 0,
+  "name": "Ethiopian Birr"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891758"
+  },
+  "symbol": "EUR",
+  "__v": 0,
+  "name": "Euro"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789175a"
+  },
+  "symbol": "FJD",
+  "__v": 0,
+  "name": "Fijian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789175c"
+  },
+  "symbol": "FKP",
+  "__v": 0,
+  "name": "Falkland Islands Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789175e"
+  },
+  "symbol": "GBP",
+  "__v": 0,
+  "name": "British Pound Sterling"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891760"
+  },
+  "symbol": "GEL",
+  "__v": 0,
+  "name": "Georgian Lari"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891762"
+  },
+  "symbol": "GGP",
+  "__v": 0,
+  "name": "Guernsey pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891764"
+  },
+  "symbol": "GHS",
+  "__v": 0,
+  "name": "Ghanaian Cedi"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891766"
+  },
+  "symbol": "GIP",
+  "__v": 0,
+  "name": "Gibraltar Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891768"
+  },
+  "symbol": "GMD",
+  "__v": 0,
+  "name": "Gambian Dalasi"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789176a"
+  },
+  "symbol": "GNF",
+  "__v": 0,
+  "name": "Guinean Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789176c"
+  },
+  "symbol": "GTQ",
+  "__v": 0,
+  "name": "Guatemalan Quetzal"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789176e"
+  },
+  "symbol": "GYD",
+  "__v": 0,
+  "name": "Guyanaese Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891770"
+  },
+  "symbol": "HKD",
+  "__v": 0,
+  "name": "Hong Kong Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891772"
+  },
+  "symbol": "HNL",
+  "__v": 0,
+  "name": "Honduran Lempira"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891774"
+  },
+  "symbol": "HRK",
+  "__v": 0,
+  "name": "Croatian Kuna"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891776"
+  },
+  "symbol": "HTG",
+  "__v": 0,
+  "name": "Haitian Gourde"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891778"
+  },
+  "symbol": "HUF",
+  "__v": 0,
+  "name": "Hungarian Forint"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789177a"
+  },
+  "symbol": "IDR",
+  "__v": 0,
+  "name": "Indonesian Rupiah"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789177c"
+  },
+  "symbol": "ILS",
+  "__v": 0,
+  "name": "Israeli New Sheqel"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789177e"
+  },
+  "symbol": "IMP",
+  "__v": 0,
+  "name": "Manx pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891780"
+  },
+  "symbol": "INR",
+  "__v": 0,
+  "name": "Indian Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891782"
+  },
+  "symbol": "IQD",
+  "__v": 0,
+  "name": "Iraqi Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891784"
+  },
+  "symbol": "IRR",
+  "__v": 0,
+  "name": "Iranian Rial"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891786"
+  },
+  "symbol": "ISK",
+  "__v": 0,
+  "name": "Icelandic Króna"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891788"
+  },
+  "symbol": "JEP",
+  "__v": 0,
+  "name": "Jersey pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789178a"
+  },
+  "symbol": "JMD",
+  "__v": 0,
+  "name": "Jamaican Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789178c"
+  },
+  "symbol": "JOD",
+  "__v": 0,
+  "name": "Jordanian Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789178e"
+  },
+  "symbol": "JPY",
+  "__v": 0,
+  "name": "Japanese Yen"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891790"
+  },
+  "symbol": "KES",
+  "__v": 0,
+  "name": "Kenyan Shilling"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891792"
+  },
+  "symbol": "KGS",
+  "__v": 0,
+  "name": "Kyrgystani Som"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891794"
+  },
+  "symbol": "KHR",
+  "__v": 0,
+  "name": "Cambodian Riel"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891796"
+  },
+  "symbol": "KMF",
+  "__v": 0,
+  "name": "Comorian Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e7891798"
+  },
+  "symbol": "KPW",
+  "__v": 0,
+  "name": "North Korean Won"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789179a"
+  },
+  "symbol": "KRW",
+  "__v": 0,
+  "name": "South Korean Won"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789179c"
+  },
+  "symbol": "KWD",
+  "__v": 0,
+  "name": "Kuwaiti Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e789179e"
+  },
+  "symbol": "KYD",
+  "__v": 0,
+  "name": "Cayman Islands Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917a0"
+  },
+  "symbol": "KZT",
+  "__v": 0,
+  "name": "Kazakhstani Tenge"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917a2"
+  },
+  "symbol": "LAK",
+  "__v": 0,
+  "name": "Laotian Kip"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917a4"
+  },
+  "symbol": "LBP",
+  "__v": 0,
+  "name": "Lebanese Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917a6"
+  },
+  "symbol": "LKR",
+  "__v": 0,
+  "name": "Sri Lankan Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917a8"
+  },
+  "symbol": "LRD",
+  "__v": 0,
+  "name": "Liberian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917aa"
+  },
+  "symbol": "LSL",
+  "__v": 0,
+  "name": "Lesotho Loti"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ac"
+  },
+  "symbol": "LTL",
+  "__v": 0,
+  "name": "Lithuanian Litas"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ae"
+  },
+  "symbol": "LVL",
+  "__v": 0,
+  "name": "Latvian Lats"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917b0"
+  },
+  "symbol": "LYD",
+  "__v": 0,
+  "name": "Libyan Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917b2"
+  },
+  "symbol": "MAD",
+  "__v": 0,
+  "name": "Moroccan Dirham"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917b4"
+  },
+  "symbol": "MDL",
+  "__v": 0,
+  "name": "Moldovan Leu"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917b6"
+  },
+  "symbol": "MGA",
+  "__v": 0,
+  "name": "Malagasy Ariary"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917b8"
+  },
+  "symbol": "MKD",
+  "__v": 0,
+  "name": "Macedonian Denar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ba"
+  },
+  "symbol": "MMK",
+  "__v": 0,
+  "name": "Myanma Kyat"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917bc"
+  },
+  "symbol": "MNT",
+  "__v": 0,
+  "name": "Mongolian Tugrik"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917be"
+  },
+  "symbol": "MOP",
+  "__v": 0,
+  "name": "Macanese Pataca"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917c0"
+  },
+  "symbol": "MRO",
+  "__v": 0,
+  "name": "Mauritanian ouguiya"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917c2"
+  },
+  "symbol": "MUR",
+  "__v": 0,
+  "name": "Mauritian Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917c4"
+  },
+  "symbol": "MVR",
+  "__v": 0,
+  "name": "Maldivian Rufiyaa"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917c6"
+  },
+  "symbol": "MWK",
+  "__v": 0,
+  "name": "Malawian Kwacha"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917c8"
+  },
+  "symbol": "MXN",
+  "__v": 0,
+  "name": "Mexican Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ca"
+  },
+  "symbol": "MYR",
+  "__v": 0,
+  "name": "Malaysian Ringgit"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917cc"
+  },
+  "symbol": "MZN",
+  "__v": 0,
+  "name": "Mozambican Metical"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ce"
+  },
+  "symbol": "NAD",
+  "__v": 0,
+  "name": "Namibian Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917d0"
+  },
+  "symbol": "NGN",
+  "__v": 0,
+  "name": "Nigerian Naira"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917d2"
+  },
+  "symbol": "NIO",
+  "__v": 0,
+  "name": "Nicaraguan Córdoba"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917d4"
+  },
+  "symbol": "NOK",
+  "__v": 0,
+  "name": "Norwegian Krone"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917d6"
+  },
+  "symbol": "NPR",
+  "__v": 0,
+  "name": "Nepalese Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917d8"
+  },
+  "symbol": "NZD",
+  "__v": 0,
+  "name": "New Zealand Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917da"
+  },
+  "symbol": "OMR",
+  "__v": 0,
+  "name": "Omani Rial"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917dc"
+  },
+  "symbol": "PAB",
+  "__v": 0,
+  "name": "Panamanian Balboa"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917de"
+  },
+  "symbol": "PEN",
+  "__v": 0,
+  "name": "Peruvian Nuevo Sol"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917e0"
+  },
+  "symbol": "PGK",
+  "__v": 0,
+  "name": "Papua New Guinean Kina"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917e2"
+  },
+  "symbol": "PHP",
+  "__v": 0,
+  "name": "Philippine Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917e4"
+  },
+  "symbol": "PKR",
+  "__v": 0,
+  "name": "Pakistani Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917e6"
+  },
+  "symbol": "PLN",
+  "__v": 0,
+  "name": "Polish Zloty"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917e8"
+  },
+  "symbol": "PYG",
+  "__v": 0,
+  "name": "Paraguayan Guarani"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ea"
+  },
+  "symbol": "QAR",
+  "__v": 0,
+  "name": "Qatari Rial"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ec"
+  },
+  "symbol": "RON",
+  "__v": 0,
+  "name": "Romanian Leu"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917ee"
+  },
+  "symbol": "RSD",
+  "__v": 0,
+  "name": "Serbian Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917f0"
+  },
+  "symbol": "RUB",
+  "__v": 0,
+  "name": "Russian Ruble"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917f2"
+  },
+  "symbol": "RWF",
+  "__v": 0,
+  "name": "Rwandan Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917f4"
+  },
+  "symbol": "SAR",
+  "__v": 0,
+  "name": "Saudi Riyal"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917f6"
+  },
+  "symbol": "SBD",
+  "__v": 0,
+  "name": "Solomon Islands Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917f8"
+  },
+  "symbol": "SCR",
+  "__v": 0,
+  "name": "Seychellois Rupee"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917fa"
+  },
+  "symbol": "SDG",
+  "__v": 0,
+  "name": "Sudanese Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917fc"
+  },
+  "symbol": "SEK",
+  "__v": 0,
+  "name": "Swedish Krona"
+},
+{
+  "_id": {
+    "$oid": "68298aa8f418a879e78917fe"
+  },
+  "symbol": "SGD",
+  "__v": 0,
+  "name": "Singapore Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891800"
+  },
+  "symbol": "SHP",
+  "__v": 0,
+  "name": "Saint Helena Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891802"
+  },
+  "symbol": "SLL",
+  "__v": 0,
+  "name": "Sierra Leonean Leone"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891804"
+  },
+  "symbol": "SOS",
+  "__v": 0,
+  "name": "Somali Shilling"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891806"
+  },
+  "symbol": "SRD",
+  "__v": 0,
+  "name": "Surinamese Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891808"
+  },
+  "symbol": "STD",
+  "__v": 0,
+  "name": "São Tomé and Príncipe dobra"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789180a"
+  },
+  "symbol": "SVC",
+  "__v": 0,
+  "name": "Salvadoran Colón"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789180c"
+  },
+  "symbol": "SYP",
+  "__v": 0,
+  "name": "Syrian Pound"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789180e"
+  },
+  "symbol": "SZL",
+  "__v": 0,
+  "name": "Swazi Lilangeni"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891810"
+  },
+  "symbol": "THB",
+  "__v": 0,
+  "name": "Thai Baht"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891812"
+  },
+  "symbol": "TJS",
+  "__v": 0,
+  "name": "Tajikistani Somoni"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891814"
+  },
+  "symbol": "TMT",
+  "__v": 0,
+  "name": "Turkmenistani Manat"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891816"
+  },
+  "symbol": "TND",
+  "__v": 0,
+  "name": "Tunisian Dinar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891818"
+  },
+  "symbol": "TOP",
+  "__v": 0,
+  "name": "Tongan Paʻanga"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789181a"
+  },
+  "symbol": "TRY",
+  "__v": 0,
+  "name": "Turkish Lira"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789181c"
+  },
+  "symbol": "TTD",
+  "__v": 0,
+  "name": "Trinidad and Tobago Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789181e"
+  },
+  "symbol": "TWD",
+  "__v": 0,
+  "name": "New Taiwan Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891820"
+  },
+  "symbol": "TZS",
+  "__v": 0,
+  "name": "Tanzanian Shilling"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891822"
+  },
+  "symbol": "UAH",
+  "__v": 0,
+  "name": "Ukrainian Hryvnia"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891824"
+  },
+  "symbol": "UGX",
+  "__v": 0,
+  "name": "Ugandan Shilling"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891826"
+  },
+  "symbol": "USD",
+  "__v": 0,
+  "name": "US Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891828"
+  },
+  "symbol": "UYU",
+  "__v": 0,
+  "name": "Uruguayan Peso"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789182a"
+  },
+  "symbol": "UZS",
+  "__v": 0,
+  "name": "Uzbekistan Som"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789182c"
+  },
+  "symbol": "VEF",
+  "__v": 0,
+  "name": "Venezuelan Bolívar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789182e"
+  },
+  "symbol": "VND",
+  "__v": 0,
+  "name": "Vietnamese Dong"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891830"
+  },
+  "symbol": "VUV",
+  "__v": 0,
+  "name": "Vanuatu Vatu"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891832"
+  },
+  "symbol": "WST",
+  "__v": 0,
+  "name": "Samoan Tala"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891834"
+  },
+  "symbol": "XAF",
+  "__v": 0,
+  "name": "CFA Franc BEAC"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891836"
+  },
+  "symbol": "XAG",
+  "__v": 0,
+  "name": "Silver Ounce"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891838"
+  },
+  "symbol": "XAU",
+  "__v": 0,
+  "name": "Gold Ounce"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789183a"
+  },
+  "symbol": "XCD",
+  "__v": 0,
+  "name": "East Caribbean Dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789183c"
+  },
+  "symbol": "XDR",
+  "__v": 0,
+  "name": "Special drawing rights"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789183e"
+  },
+  "symbol": "XOF",
+  "__v": 0,
+  "name": "CFA Franc BCEAO"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891840"
+  },
+  "symbol": "XPF",
+  "__v": 0,
+  "name": "CFP Franc"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891842"
+  },
+  "symbol": "YER",
+  "__v": 0,
+  "name": "Yemeni Rial"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891844"
+  },
+  "symbol": "ZAR",
+  "__v": 0,
+  "name": "South African Rand"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891846"
+  },
+  "symbol": "ZMK",
+  "__v": 0,
+  "name": "Zambian Kwacha"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891848"
+  },
+  "symbol": "ZMW",
+  "__v": 0,
+  "name": "Zambian Kwacha"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789184a"
+  },
+  "symbol": "ZWL",
+  "__v": 0,
+  "name": "Zimbabwean dollar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789184c"
+  },
+  "symbol": "XPT",
+  "__v": 0,
+  "name": "Platinum Ounce"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789184e"
+  },
+  "symbol": "XPD",
+  "__v": 0,
+  "name": "Palladium Ounce"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891850"
+  },
+  "symbol": "BTC",
+  "__v": 0,
+  "name": "Bitcoin"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891852"
+  },
+  "symbol": "ETH",
+  "__v": 0,
+  "name": "Ethereum"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891854"
+  },
+  "symbol": "BNB",
+  "__v": 0,
+  "name": "Binance"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891856"
+  },
+  "symbol": "XRP",
+  "__v": 0,
+  "name": "Ripple"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891858"
+  },
+  "symbol": "SOL",
+  "__v": 0,
+  "name": "Solana"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789185a"
+  },
+  "symbol": "DOT",
+  "__v": 0,
+  "name": "Polkadot"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789185c"
+  },
+  "symbol": "AVAX",
+  "__v": 0,
+  "name": "Avalanche"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789185e"
+  },
+  "symbol": "MATIC",
+  "__v": 0,
+  "name": "Matic Token"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891860"
+  },
+  "symbol": "LTC",
+  "__v": 0,
+  "name": "Litecoin"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891862"
+  },
+  "symbol": "ADA",
+  "__v": 0,
+  "name": "Cardano"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891864"
+  },
+  "symbol": "USDT",
+  "__v": 0,
+  "name": "Tether"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891866"
+  },
+  "symbol": "USDC",
+  "__v": 0,
+  "name": "USD Coin"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891868"
+  },
+  "symbol": "DAI",
+  "__v": 0,
+  "name": "Dai"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789186a"
+  },
+  "symbol": "ARB",
+  "__v": 0,
+  "name": "Arbitrum"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789186c"
+  },
+  "symbol": "OP",
+  "__v": 0,
+  "name": "Optimism"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e789186e"
+  },
+  "symbol": "VES",
+  "__v": 0,
+  "name": "Venezuelan Bolívar"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891870"
+  },
+  "symbol": "STN",
+  "__v": 0,
+  "name": "São Tomé and Príncipe dobra"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891872"
+  },
+  "symbol": "MRU",
+  "__v": 0,
+  "name": "Mauritanian ouguiya"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891874"
+  },
+  "symbol": "ZWG",
+  "__v": 0,
+  "name": "Zimbabwe Gold"
+},
+{
+  "_id": {
+    "$oid": "68298aa9f418a879e7891876"
+  },
+  "symbol": "SLE",
+  "__v": 0,
+  "name": "Sierra Leonean leone"
+}]
